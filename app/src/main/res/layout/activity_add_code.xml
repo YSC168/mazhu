@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<include
+		layout="@layout/toolbar"/>
+
+	<EditText
+		android:id="@+id/new_codetitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="标题"
+		android:ems="10"
+		android:singleLine="true"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<RadioGroup
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<RadioButton
+						android:id="@+id/new_code_type_code"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:checked="true"
+						android:hint="代码"/>
+
+					<RadioButton
+						android:id="@+id/new_code_type_help"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:hint="求助"/>
+
+					<RadioButton
+						android:id="@+id/new_code_type_talk"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:hint="灌水"/>
+
+					<RadioButton
+						android:id="@+id/new_code_type_other"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:hint="其他"/>
+
+				</RadioGroup>
+
+			</HorizontalScrollView>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<EditText
+			android:gravity="center|left|top"
+			android:id="@+id/new_codecontent"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:ems="10"
+			android:hint="内容"/>
+
+		<android.support.design.widget.FloatingActionButton
+			android:id="@+id/test_fab"
+			app:elevation="6dp"
+			app:pressedTranslationZ="12dp"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:onClick="新建"
+			app:backgroundTint="#0099fb"
+			android:src="@drawable/newcode_fab"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_margin="20dp"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+
+

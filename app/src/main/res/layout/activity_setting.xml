@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#FBFBFB">
+
+	<include
+		layout="@layout/toolbar"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_height="45dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="left|center"
+				android:clickable="true"
+				android:background="@drawable/fg_click_bg"
+				android:layout_marginTop="20dp"
+				android:id="@+id/code_theme">
+
+				<ImageView
+					android:layout_height="40dp"
+					android:layout_width="40dp"
+					android:src="@drawable/fg_my_sc"
+					android:layout_marginLeft="15dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="编辑器风格"
+					android:layout_marginLeft="15dp"/>
+
+			</LinearLayout>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<LinearLayout
+				android:layout_height="45dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="left|center"
+				android:clickable="true"
+				android:background="@drawable/fg_click_bg">
+
+				<ImageView
+					android:layout_height="40dp"
+					android:layout_width="40dp"
+					android:src="@drawable/fg_my_addcode_ok"
+					android:layout_marginLeft="15dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="账户安全"
+					android:layout_marginLeft="15dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="45dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="left|center"
+				android:clickable="true"
+				android:background="@drawable/fg_click_bg"
+				android:layout_marginTop="20dp"
+				android:id="@+id/setting_updata">
+
+				<ImageView
+					android:layout_height="40dp"
+					android:layout_width="40dp"
+					android:src="@drawable/image_3"
+					android:layout_marginLeft="15dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="检查更新"
+					android:layout_marginLeft="15dp"/>
+
+			</LinearLayout>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_height="1dp"
+				android:layout_width="match_parent"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<LinearLayout
+				android:layout_height="45dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="left|center"
+				android:clickable="true"
+				android:background="@drawable/fg_click_bg">
+
+				<ImageView
+					android:layout_height="40dp"
+					android:layout_width="40dp"
+					android:src="@drawable/fg_my_setting"
+					android:layout_marginLeft="15dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="关于码助"
+					android:layout_marginLeft="15dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="45dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:clickable="true"
+				android:layout_marginTop="20dp"
+				android:id="@+id/setting_tcdl"
+				android:visibility="invisible"
+				android:background="#FC0E00">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content"
+					android:text="退出登录"
+					android:textColor="#FFFFFF"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

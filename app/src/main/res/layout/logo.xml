@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="#FFFFFF">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true">
+
+		<LinearLayout
+			android:layout_height="150dp"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_alignParentBottom="true">
+
+			<ImageView
+				android:src="@drawable/app_logo"
+				android:layout_height="match_parent"
+				android:layout_width="130dp"
+				android:layout_margin="10dp"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:text="©睡客网络"
+			android:gravity="center"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dp"
+			android:id="@+id/logo_version"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+
+

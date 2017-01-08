@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">码助(特制版)</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="nav_open">开</string>
+    <string name="nav_close">关</string>
+	<drawable name="clr_normal">#ffffff</drawable>
+	<drawable name="clr_pressed">#E8E8E8</drawable>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+			android:id="@+id/nav_me"
+			android:title="我"
+			android:icon="@drawable/my"/>
+        <item
+			android:id="@+id/nav_yfb"
+			android:title="已发布"
+			android:icon="@drawable/fg_my_sc"/>
+        <item
+			android:id="@+id/nav_notification"
+			android:title="收藏"
+			android:icon="@drawable/fg_my_sc"/>
+        
+    </group>
+    <group android:checkableBehavior="none"
+		android:id="@+id/group_manage">
+        <item
+			android:id="@+id/nav_updata"
+			android:title="检测更新"
+			android:icon="@drawable/ic_launcher"/>
+    </group>
+	<group
+		android:checkableBehavior="none"
+		android:id="@+id/group_settings">
+		<item
+			android:id="@+id/nav_manage"
+			android:title="编辑器风格"
+			/>
+		<item android:id="@+id/nav_setting"
+			android:title="设置"/>
+		<item android:id="@+id/nav_suggestion"
+			android:title="意见反馈"/>
+		<item android:id="@+id/nav_about"
+			android:title="关于"/>
+		<item android:id="@+id/nav_exit"
+			android:title="退出"/>
+	</group>
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="150dp"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="150dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<ImageView
+			android:scaleType="fitXY"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/txbz"
+			android:src="@drawable/image_2"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center"
+		android:id="@+id/jmLinearLayout1"
+		android:layout_alignParentBottom="true">
+
+		<LinearLayout
+			android:layout_height="100dp"
+			android:layout_width="100dp"
+			android:orientation="vertical"
+			android:gravity="center">
+
+			<ImageView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:src="@drawable/icon_tx"
+				android:layout_margin="10dp"
+				android:id="@+id/my_user_tx"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:id="@+id/tv"
+				android:textColor="#FFFFFF"
+				android:layout_marginLeft="10dp"
+				android:shadowColor="#000000"
+				android:shadowDx="1.0"
+				android:shadowDy="1.0"
+				android:shadowRadius="1.0"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textColor="#E13D07"
+				android:id="@+id/qm"
+				android:layout_marginLeft="10dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+
+
